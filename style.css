@@ -10,7 +10,7 @@ body {
     font-family: 'Epilogue', sans-serif;
     font-style: normal;
     background-color: #ECE9FD;
-    padding: 6.0rem 2.3rem 6.6rem;   
+    padding: 6.0rem 2.3rem 6rem;   
 }
 
 main {
@@ -78,7 +78,7 @@ ul li {
     color: #090039;
     line-height: 3.2rem;
 
-    max-width: 25.7rem;
+    max-width: 26.7rem;
 
     display: flex;
     gap: 3.8rem;
@@ -96,8 +96,42 @@ ul li span {
     line-height: 8.0rem;
 }
 
+/* 1rem = 16px */
 :root {
     font-size: 62.5%; /* 10px */
 }
 
-/* 1rem = 16px */
+/* media queries*/
+/* faz o ajuste do tamanha da nossa tela*/
+@media (min-width: 700px) {
+
+    body{
+        padding: 8rem;
+    }
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 10em;
+    }
+
+    main > div {
+        max-width: 484px;
+
+    }
+
+    ul  li{
+        gap: 5.3rem;
+        max-width: 450px;
+        align-items: center;
+
+    }
+
+    ul li:first-child {
+        gap: 6rem;
+    }
+
+    ul li + li {
+        margin-top: 3.2rem;
+    }
+}
